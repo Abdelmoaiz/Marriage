@@ -1,0 +1,124 @@
+/* galobl css */
+
+*{
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: #fff;
+
+}
+.container{
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+@media (min-width:767px) {
+    .container{
+        width: 750px;
+    }
+}
+@media (min-width:991px) {
+    .container{
+        width: 970px;
+    }
+}@media (min-width:1199px) {
+    .container{
+        width: 1170px;
+    }
+}
+.questions{
+    text-align: center;
+}
+.questions h2{
+    margin: 10px auto;
+    text-align: center;
+    font-size: 36px;
+}
+.question{
+    /* display: none; */
+    width: 100%;
+    margin: 100px auto;
+    padding: 50px;
+    border-radius: 20px;
+    text-align: center;
+    background-color: rgb(157, 9, 147);
+    color: white;
+    box-shadow: -10px 10px rgb(139, 137, 141);
+}
+.question1{
+    display: block;
+}
+.question h1{
+    margin-bottom: 40px;
+}
+.question input{
+    width: 70%;
+    height: 40px;
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 18px;
+    border: none;
+    outline: none;
+
+}
+button{
+    width: 200px;
+    background-color: rgb(157, 9, 147);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    position: relative;
+    top: 20px;
+    font-size: 30px;
+
+}
+button:hover{
+    background-color: rgb(177, 127, 224);
+
+}
+button:active{
+    background-color: rgb(129, 31, 221);
+
+}
+.questionDetails{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(250px,1fr));
+    grid-gap:50px;
+    margin-top: 10px;
+
+}
+.questionDetails h3{
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+    color: blueviolet;
+    cursor: pointer;
+}
+.questionDetails h3:hover{
+    background-color: rgb(127, 86, 135);
+    color: white;
+}
+.questionDetails h3:active{
+    background-color: rgb(179, 49, 205);
+    color: white;
+}
+

@@ -1,0 +1,113 @@
+/* galobl css */
+
+*{
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: white;
+
+}
+.container{
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+@media (min-width:767px) {
+    .container{
+        width: 750px;
+    }
+}
+@media (min-width:991px) {
+    .container{
+        width: 970px;
+    }
+}@media (min-width:1199px) {
+    .container{
+        width: 1170px;
+    }
+}
+.card{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+    grid-gap:20px;
+    padding: 20px;
+    margin-top: 50px;
+    border: 2px solid #aaa;
+    border-radius: 10px;
+
+}
+/* h */
+.card .content{
+    background-color: rgb(157, 9, 147);
+    color: #fff;
+    padding: 10px;
+    margin: 20px auto;
+    border-radius: 10px;
+    border: 2px solid #aaa;
+    box-shadow: -6px 6px #666;
+
+
+}
+.sec-head{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #424040;
+}
+.card .content .sec-head::after{
+    /* content: '';
+    display: block;
+    width: 90%;
+    border: 1px solid #424040; */
+}
+.card .sec-head img{
+    width: 50px;
+    border-radius: 50%;
+}
+.card .content .sec-content,.card .content .sec-footer{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    padding-bottom: 20px;
+}
+.card .content .sec-content{
+    border-bottom: 1px solid #424040;
+
+}
+.card .content .sec-content h3{
+    width: 100%;
+    text-align: right;
+}
+.card .content .sec-content p,.card .content .sec-footer p{
+    width: 30%;
+    margin: 5px auto;
+    padding: 5px;
+    border: 1px solid #ddd;
+    background-color: rgb(157, 9, 147);
+    border-radius: 10px;
+}
+.card .content .sec-footer p{
+    width: 20%;
+    background-color: rgb(215, 229, 229);
+    color: rgb(157, 9, 147);
+
+
+
+}
